@@ -1,0 +1,72 @@
+.wrapper {
+  height: 100vh;
+  transition: background 1300ms ease-in-out;
+  .app {
+    background: white;
+    padding: 2em;
+    width: 40%;
+    min-width: 400px;
+
+    img {
+      display: block;
+      margin: auto;
+    }
+
+    .header {
+      transition: color 1300ms ease-in-out;
+
+      .author {
+        text-align: right;
+      }
+
+      .quote {
+        text-align: left;
+        line-height: 1.5;
+        letter-spacing: 1px;
+      }
+    }
+
+    .footer {
+      margin-top: 1.5em;
+      display: flex;
+      justify-content: space-between;
+      //align-items: center;
+
+      .social {
+        display: flex;
+
+        .fab {
+          cursor: pointer;
+          width: 40px;
+          height: 40px;
+          background: white;
+          color: black;
+          border: 1px solid black;
+          margin-right: 0.2em;
+          transition: all 200ms ease-in-out;
+
+          &:hover {
+            background: black;
+            color: white;
+          }
+        }
+      }
+
+      .btn {
+        cursor: pointer;
+        border: none;
+        padding: 0.5em 1em;
+        background: orange;
+        color: white;
+        font-size: 1rem;
+        font-weight: 600;
+        transition: background 1300ms ease-in-out;
+        transition: opacity 200ms ease-in-out;
+
+        &:hover {
+          opacity: 0.9;
+        }
+      }
+    }
+  }
+}
